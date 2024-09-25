@@ -27,7 +27,7 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   padding: '8px 12px',
 }));
 
-export default function AppAppBar() {
+export default function PaymentBar() {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen: boolean) => () => {
@@ -47,7 +47,7 @@ export default function AppAppBar() {
               <Button variant="text" color="info" size="small" onClick={() => navigate('/units')}>
                 Об'єкти
               </Button>
-              <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }} onClick={() => navigate('/payments')}>
+              <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }} disabled={true} onClick={() => navigate('/payments')}>
                 Оплати
               </Button>
             </Box>
@@ -59,11 +59,8 @@ export default function AppAppBar() {
               alignItems: 'center',
             }}
           >
-            <Button color="primary" variant="text" size="small" onClick={() => navigate('/login')}>
-              Вхід
-            </Button>
             <Button color="primary" variant="contained" size="small" onClick={() => navigate('/registration')}>
-              Реєстрація
+              Вихід
             </Button>
           </Box>
           <Box sx={{ display: { sm: 'flex', md: 'none' } }}>

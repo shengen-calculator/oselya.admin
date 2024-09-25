@@ -44,7 +44,7 @@ export default function UnitBar() {
         <StyledToolbar variant="dense" disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant="text" color="info" size="small" onClick={() => navigate('/units')}>
+              <Button variant="text" color="info" size="small" disabled={true} onClick={() => navigate('/units')}>
                 Об'єкти
               </Button>
               <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }} onClick={() => navigate('/payments')}>
@@ -59,11 +59,8 @@ export default function UnitBar() {
               alignItems: 'center',
             }}
           >
-            <Button color="primary" variant="text" size="small" onClick={() => navigate('/login')}>
-              Вхід
-            </Button>
             <Button color="primary" variant="contained" size="small" onClick={() => navigate('/registration')}>
-              Реєстрація
+              Вихід
             </Button>
           </Box>
           <Box sx={{ display: { sm: 'flex', md: 'none' } }}>

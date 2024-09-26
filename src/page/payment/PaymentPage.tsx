@@ -41,9 +41,9 @@ export default function PaymentPage() {
     }
 
     const rows = [
-        createRow('Липень', 216132.91, 168211.34),
-        createRow('Серпень', 216142.98, 179284.21),
-        createRow('Вересень', 219341.56, 162311.15),
+        createRow('Липень', 21613.91, 16821.34),
+        createRow('Серпень', 21612.98, 17984.21),
+        createRow('Вересень', 21934.56, 16211.15),
     ];
 
     const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -300,9 +300,9 @@ export default function PaymentPage() {
                             ))}
                             <StyledTableRow>
                                 <StyledTableCell align="right">Всього</StyledTableCell>
-                                <StyledTableCell align="right">651617.45</StyledTableCell>
-                                <StyledTableCell align="right">509806.7</StyledTableCell>
-                                <StyledTableCell align="right">78.24 %</StyledTableCell>
+                                <StyledTableCell align="right">65161.45</StyledTableCell>
+                                <StyledTableCell align="right">51016.7</StyledTableCell>
+                                <StyledTableCell align="right">78.29 %</StyledTableCell>
                             </StyledTableRow>
                         </TableBody>
                     </Table>
